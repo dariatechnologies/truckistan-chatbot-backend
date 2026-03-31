@@ -7,6 +7,7 @@ export default () => ({
   magicMail: async (body) => {
     var email = body?.email?.toLowerCase();
     //return email
+    
     var username = body?.username;
     const userId = jwt_decode.jwtDecode(body?.jwt_token);
     var role = body?.role;
